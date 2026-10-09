@@ -1,0 +1,1 @@
+This project loads photos from external image services, so an internet connection is needed. The SVG icons in this folder are used for stars, arrows, search, menu and social icons. Replace image URLs in index.html with local paths to use your own photos.
