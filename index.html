@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%8D%9C%3C%2Ftext%3E%3C%2Fsvg%3E" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Asian Delight</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <div class="header__logo">
+          <h4 data-aos="fade-down">Asian Delight</h4>
+          <div class="header__logo-overlay"></div>
+        </div>
+        <ul class="header__menu">
+          <li><a href="#menu">Menu</a></li><li><a href="#food">Food</a></li><li><a href="#services">Services</a></li><li><a href="#about-us">About Us</a></li><li><img src="assets/search.svg" alt="search" /></li>
+        </ul>
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li><button class="header__menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><img src="assets/menu.svg" alt="menu" /></button></li>
+        </ul>
+      </nav>
+      <ul class="mobile-nav" id="mobileNav">
+        <li><a href="#menu">Menu</a></li><li><a href="#food">Food</a></li><li><a href="#services">Services</a></li><li><a href="#about-us">About Us</a></li>
+      </ul>
+    </header>
+    <section class="hero">
+      <div class="hero-image">
+        <img src="https://images.pexels.com/photos/884600/pexels-photo-884600.jpeg?auto=compress&cs=tinysrgb&w=800" alt="ramen" data-aos="fade-up" />
+        <h2 data-aos="fade-up">亞 <br />洲 <br />食</h2>
+        <div class="hero-image__overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-content-info" data-aos="fade-left">
+          <h1>Experience authentic Asian flavors</h1>
+          <p>Savor the taste of the most delicious Asian cuisine from anywhere and anytime.</p>
+          <div class="hero-content__buttons"><button class="hero-content__order-button">Order Now</button><button class="hero-content__play-button"><img src="assets/play-circle.svg" alt="play" />How to Order</button></div>
+        </div>
+        <div class="hero-content__testimonial" data-aos="fade-up">
+          <div class="hero-content__customer flex-center"><h4>76<span>k+</span></h4><p>Satisfied Customers</p></div>
+          <div class="hero-content__review"><img src="https://i.pravatar.cc/120?img=12" alt="user" /><p>"This is the best Asian restaurant that ever existed."</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us" id="about-us">
+      <div class="about-us__image">
+        <div class="about-us__image-sushi3"><img src="https://loremflickr.com/400/200/dimsum?lock=2" alt="dim sum" data-aos="fade-right" /></div>
+        <button class="about-us__button">Learn More<img src="assets/arrow-up-right.svg" alt="learn more" /></button>
+        <div class="about-us__image-sushi2"><img src="https://loremflickr.com/400/230/padthai?lock=3" alt="pad thai" data-aos="fade-right" /></div>
+      </div>
+      <div class="about-us__content" data-aos="fade-left"><h4 class="subtitle">About Us</h4><h3 class="title">Our mission is to bring authentic Asian flavors to you.</h3><p class="description">We will continue to provide the experience of true Asian hospitality, with carefully crafted dishes from across Asia for our customers.</p></div>
+    </section>
+    <section class="popular-foods" id="menu">
+      <h2 class="popular-foods__title" data-aos="flip-up">Popular Dishes</h2>
+      <div class="popular-foods__filters sushi__hide-scrollbar" data-aos="fade-up">
+        <button class="popular-foods__filter-btn active" data-filter="all">All</button>
+        <button class="popular-foods__filter-btn" data-filter="ramen"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%8D%9C%3C%2Ftext%3E%3C%2Fsvg%3E" alt="ramen" />Ramen</button>
+        <button class="popular-foods__filter-btn" data-filter="dumplings"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%A5%9F%3C%2Ftext%3E%3C%2Fsvg%3E" alt="dumplings" />Dumplings</button>
+        <button class="popular-foods__filter-btn" data-filter="noodles"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%8D%9D%3C%2Ftext%3E%3C%2Fsvg%3E" alt="noodles" />Noodles</button>
+        <button class="popular-foods__filter-btn" data-filter="rice"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%8D%9A%3C%2Ftext%3E%3C%2Fsvg%3E" alt="rice" />Rice Bowls</button>
+      </div>
+      <div class="popular-foods__catalogue" data-aos="fade-up">
+        <article class="popular-foods__card" data-category="ramen"><img class="popular-foods__card-image" src="https://images.pexels.com/photos/13015752/pexels-photo-13015752.jpeg?auto=compress&cs=tinysrgb&w=400" alt="tonkotsu ramen" /><h4 class="popular-foods__card-title">Tonkotsu Ramen</h4><div class="popular-foods__card-details flex-between"><div class="popular-foods__card-rating"><img src="assets/star.svg" alt="star" /><p>4.9</p></div><p class="popular-foods__card-price">$18.00</p></div></article>
+        <article class="popular-foods__card active-card" data-category="dumplings"><img class="popular-foods__card-image" src="https://loremflickr.com/300/300/gyoza?lock=5" alt="gyoza" /><h4 class="popular-foods__card-title">Pan-Fried Gyoza</h4><div class="popular-foods__card-details flex-between"><div class="popular-foods__card-rating"><img src="assets/star.svg" alt="star" /><p>5.0</p></div><p class="popular-foods__card-price">$14.00</p></div></article>
+        <article class="popular-foods__card" data-category="rice"><img class="popular-foods__card-image" src="https://loremflickr.com/300/300/friedrice?lock=6" alt="fried rice" /><h4 class="popular-foods__card-title">Special Fried Rice</h4><div class="popular-foods__card-details flex-between"><div class="popular-foods__card-rating"><img src="assets/star.svg" alt="star" /><p>4.7</p></div><p class="popular-foods__card-price">$13.00</p></div></article>
+      </div>
+      <p class="popular-foods__empty" id="noResults" hidden>No dishes in this category yet. Check back soon!</p>
+      <button class="popular-foods__button">Explore Menu<img src="assets/arrow-right.svg" alt="arrow-right" /></button>
+    </section>
+    <section class="trending" id="food">
+      <section class="trending-sushi"><div class="trending__content" data-aos="fade-right"><p class="subtitle">What's Trending / 熱門趨勢</p><h3 class="title">Japanese Ramen</h3><p class="description">Experience the rich, savory flavors of authentic Japanese ramen.</p><ul class="trending__list flex-between"><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Tonkotsu Ramen</p></li><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Miso Ramen</p></li><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Shoyu Ramen</p></li><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Spicy Ramen</p></li><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Vegetable Ramen</p></li><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Seafood Ramen</p></li></ul></div>
+        <div class="trending__image flex-center"><img src="https://images.pexels.com/photos/12984980/pexels-photo-12984980.jpeg?auto=compress&cs=tinysrgb&w=800" alt="ramen" data-aos="fade-left" /><div class="trending__arrow trending__arrow-left"><img src="assets/arrow-vertical.svg" alt="arrow vertical" /></div><div class="trending__arrow trending__arrow-bottom"><img src="assets/arrow-horizontal.svg" alt="arrow horizontal" /></div></div>
+      </section>
+      <div class="trending__discover" data-aos="zoom-in"><p>Discover</p></div>
+      <section class="trending-drinks"><div class="trending__image flex-center"><img src="https://loremflickr.com/600/600/bubbletea?lock=8" alt="boba tea" data-aos="fade-right" /><div class="trending__arrow trending__arrow-top"><img src="assets/arrow-horizontal.svg" alt="arrow horizontal" /></div><div class="trending__arrow trending__arrow-right"><img src="assets/arrow-vertical.svg" alt="arrow vertical" /></div></div>
+        <div class="trending__content" data-aos="fade-left"><p class="subtitle">What's Trending / 熱門趨勢</p><h3 class="title">Asian Beverages</h3><p class="description">Refresh yourself with the finest selection of Asian drinks.</p><ul class="trending__list flex-between"><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Bubble Tea</p></li><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Green Tea</p></li><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Thai Tea</p></li><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Matcha Latte</p></li><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Iced Coffee</p></li><li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Jasmine Tea</p></li></ul></div>
+      </section>
+    </section>
+    <section class="subscription flex-center" id="services"><h2 data-aos="flip-down">Get offers straight <br />to your inbox</h2><p data-aos="fade-up">Sign up for the Asian Delight newsletter</p><form class="subscription__form" id="newsletterForm" data-aos="fade-up"><input type="email" id="emailInput" placeholder="Enter your email address" aria-label="Email address" required /><button type="submit">Get Started</button></form></section>
+    <footer class="footer flex-between"><h3 class="footer__logo"><span>Asian</span> Delight</h3><ul class="footer__nav"><li><a href="#menu">Menu</a></li><li><a href="#food">Food</a></li><li><a href="#services">Services</a></li><li><a href="#about-us">About Us</a></li></ul><ul class="footer__social"><li class="flex-center"><img src="assets/facebook.svg" alt="facebook" /></li><li class="flex-center"><img src="assets/instagram.svg" alt="instagram" /></li><li class="flex-center"><img src="assets/twitter.svg" alt="twitter" /></li></ul></footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
